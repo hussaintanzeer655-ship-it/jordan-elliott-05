@@ -1,0 +1,1 @@
+(() => {const root=document.documentElement; const toggle=document.getElementById('themeToggle'); const saved=localStorage.getItem('theme'); if(saved==='light') root.classList.add('light'); toggle?.addEventListener('click', ()=>{const isLight=root.classList.toggle('light'); localStorage.setItem('theme',isLight?'light':'dark');});})();
