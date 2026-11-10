@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Elliott - Preview Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header"><div class="brand">Jordan</div><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button></header>
+  <main class="panel" aria-label="Board">
+    <h1>Preview Board</h1>
+    <p class="muted">A simple, draggable-like card layout without external libs.</p>
+    <section id="board" class="grid" aria-label="Notes board" style="gap:12px;gridTemplateColumns:repeat(auto-fit,minmax(160px,1fr));display:grid;grid-auto-rows:110px;">
+      <div class="card" draggable="false">Idea 1</div>
+      <div class="card" draggable="false">Idea 2</div>
+      <div class="card" draggable="false">Note</div>
+      <div class="card" draggable="false">To Do</div>
+    </section>
+  </main>
+  <footer class="site-footer">© 2024 Jordan</footer>
+  <script src="script.js"></script>
+</body>
+</html>
