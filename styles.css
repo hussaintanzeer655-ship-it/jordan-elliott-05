@@ -1,0 +1,9 @@
+/* Board style */ :root{--bg:#0b1020;--card:#141a2b;--text:#e9efff;--muted:#a6b4d6;--accent:#22c55e} :root.light{--bg:#f7f7fb;--card:#fff;--text:#0b1020;--muted:#5b6b8a;--accent:#3b82f6}
+*{box-sizing:border-box} html,body{margin:0;height:100%} body{background:var(--bg);color:var(--text);font-family:system-ui, sans-serif}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 1rem;border-bottom:1px solid rgba(255,255,255,.15);background:var(--card);position:sticky;top:0}
+.brand{font-weight:700}
+.icon-btn{background:transparent;border:1px solid rgba(255,255,255,.25);color:var(--text);padding:.25rem .5rem;border-radius:6px}
+.panel{padding:2rem 1rem;max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.card{background:var(--card);border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:110px}
+@media (max-width:600px){.grid{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}}
